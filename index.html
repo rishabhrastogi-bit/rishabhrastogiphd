@@ -290,8 +290,8 @@
   <div class="hero-content fade-in">
     <div class="hero-badge">PhD · ALD/CVD · IMEC | ASM International · Process Expert → Technical Advisor</div>
     <h1>Rishabh Rastogi, Ph.D.</h1>
-    <p class="hero-desc">There are very few people who have actually built processes at the leading edge of semiconductor manufacturing — and can then walk into a boardroom and explain what it means for a billion-dollar investment decision.</p>
-    <p class="hero-desc">I spent a decade developing ALD and CVD processes for sub-3nm GAA logic nodes at IMEC's 300mm fab in Leuven — the world's most advanced semiconductor R&D environment — as part of ASM International's engineering team. 7 patents. 6 publications. Processes that went into qualification at Tier-1 logic and memory fabs globally.</p>
+    <p class="hero-desc">Few people have built leading-edge semiconductor processes and then translated that work into clear, boardroom-ready insight for billion-dollar investment decisions.</p>
+    <p class="hero-desc">I bring deep experience in advanced materials and semiconductor R&D, including three years developing ALD and CVD processes for sub-3nm GAA logic nodes at IMEC's 300mm fab in Leuven as part of ASM International's engineering team. 7 patents. 6 publications. Processes that went into qualification at Tier-1 logic and memory fabs globally.</p>
     <p class="hero-desc">Today I work independently — advising PE firms, hedge funds, and deep tech companies on technology decisions that require someone who has actually built what they are evaluating.</p>
     <div class="btn-group">
       <a href="https://www.linkedin.com/in/rishabh-rastogi-phd" target="_blank" class="btn btn-primary">View LinkedIn ↗</a>
@@ -303,7 +303,7 @@
     <img src="Hero.png" alt="Semiconductor & Nanophotonics">
     <div class="hero-image-overlay">
       <div class="tag">Sub-3nm GAA · IMEC · ASM International</div>
-      <p>ALD · CVD · 7 Patents · 5 Countries · 8+ Years</p>
+      <p>ALD · CVD · 7 Patents · 5 Countries · 8+ years professional experience in advanced materials</p>
     </div>
   </div>
 </section>
@@ -313,7 +313,7 @@
   <div class="section-label">What I Do</div>
   <div class="divider"></div>
   <h2 class="section-title">How I Can Help</h2>
-  <p class="section-subtitle">I bring process-level technical depth to decisions that most advisors can only evaluate from the outside. Whether you're allocating capital, building a product, or planning a roadmap — I've built what you're evaluating.</p>
+  <p class="section-subtitle">I combine process-level semiconductor expertise with real-world product and investment experience so you can evaluate technical opportunity with confidence, not guesswork.</p>
   <div class="services-grid fade-in">
     <div class="service-card">
       <div class="service-icon">🔬</div>
@@ -1026,12 +1026,16 @@ function switchCareerTab(tab, btn) {
   document.querySelectorAll('.career-tab').forEach(t => t.classList.remove('active'));
   document.querySelectorAll('.career-panel').forEach(p => p.classList.remove('active'));
   btn.classList.add('active');
-  document.getElementById('career-' + tab).classList.add('active');
+  const panel = document.getElementById('career-' + tab);
+  panel.classList.add('active');
+  panel.classList.add('visible');
 }
 function switchPubTab(tab, btn) {
   document.querySelectorAll('.pub-tab').forEach(t => t.classList.remove('active'));
   document.querySelectorAll('.pub-panel').forEach(p => p.classList.remove('active'));
-  document.querySelector('#tab-' + tab).classList.add('active');
+  const panel = document.querySelector('#tab-' + tab);
+  panel.classList.add('active');
+  panel.classList.add('visible');
   if (btn) btn.classList.add('active');
 }
 const observer = new IntersectionObserver((entries) => {
