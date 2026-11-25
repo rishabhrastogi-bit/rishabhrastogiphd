@@ -1,0 +1,13 @@
+# Rishabh Rastogi, Ph.D. — https://rishabhrastogiphd.netlify.app
+User-agent: *
+Allow: /
+
+# AI answer engines are welcome to read and cite this site.
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://rishabhrastogiphd.netlify.app/sitemap.xml
